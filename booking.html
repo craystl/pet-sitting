@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <!--Apply style rules from CSS file-->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <!--Logo and brand name-->
+        <div class="brand">
+            <img src="images/logo.jpg" alt="logo" id="logo">                
+            <h1 class="title">Book a Pet Sitting Session</h1>
+        </div>
+        <!--Navigation links to the two other pages-->            
+        <div class="navigation">
+            <a href="main.html" class="link">Home</a>
+            <a href="services.html" class="link">Services</a>
+        </div>  
+    </header>
+    
+    <main> 
+        <!--Booking form-->
+        <form method="get" id="booking-form" onsubmit="alert('Thanks, we\'ll be in touch soon'); window.location.href='main.html'; return false;">
+        <p>Fill out the form below and we'll get back to you as soon as pawssible!</p>
+        <div>
+            <label>First Name*</label>
+            <input type="text" maxlength="50" required> 
+        </div>
+        <br>
+        <div>
+            <label>Last Name*</label>
+            <input type="text" maxlength="50" required>
+        </div>
+        <br>
+        <div>
+            <label>Email*</label>
+            <input type="email" required>
+        </div>
+        <br>
+        <div>
+            <label>Phone Number</label>
+            <input type="tel">
+        </div>
+        <br>
+        <div>
+            <label>Choose your pet*</label>
+            <select id="service" name="service" required>
+                <option value="">Please select</option>
+                <option>Dog Sitting</option>
+                <option>Cat Sitting</option>
+                <option>Bird Sitting</option>
+                <option>Other Pet (Enter in comment box below)</option>
+                <option>Inquiry</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Comments</label>
+            <br>
+            <textarea maxlength="300" id="commentbox" name="commentbox" rows="5" cols="50" 
+            placeholder="Please include any details you would like us to know about your pet"></textarea>
+        </div>
+        <br>
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    </main>
+    <!--Copyright notice-->
+    <footer>
+        &copy; 2026 Chirpal's Pet Sitting.
+    </footer>
+</body>
+</html>

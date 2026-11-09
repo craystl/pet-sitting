@@ -1,0 +1,122 @@
+/* Setting background color for all webpages */
+body {
+    background-color:bisque;
+}
+
+header {
+    background-color:white;
+}
+
+/* Designing header 1 for titles */
+h1 {
+    color: #7f400d;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #7f400d;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+/* Setting size limit to logo image */
+#logo {
+    width: 10rem;
+    height: auto;
+}
+/* Green box for about us paragraph */
+#about-us {
+    padding: 5%;
+    background-color:#99be64; 
+    margin:3em;
+}
+/* Customising link color and font */
+.link {
+    color:#7f400d;
+    font-family: Georgia, serif;
+    font-weight:bold;
+}
+
+.link:hover {
+    color:#99be64;
+}
+
+.link:visited {
+    color:#538d56; 
+}
+
+/* Setting size of images used in services page*/
+img {
+    width: 30vw;
+    height: auto;
+}
+
+/* Making the text under the images smaller */
+.credit {
+    width: 30vw;
+    font-size: 80%;
+}
+/* Making the services table green */
+#services-table {
+    width: 40vw;
+    border: 2px solid #99be64;
+}
+
+#services-table td, #services-table th {
+    width: 5%;
+    text-align: center;
+    border: 1px solid #99be64;
+}
+/* Adjusting appearance and size of submit button in booking form */
+#submit-btn {
+    background-color:#b6deae;
+    padding-left: 1em;
+    padding-right:1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+    border-color:#99be64;
+    
+}
+/* Using grid display for past events in services page */
+.container {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 50vh;
+    column-gap: 3vw;
+    align-items: center;
+}
+/* Making header items align and responsive */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+/* Making position of logo and title responsive */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* Making position of navigation links responsive */
+.navigation {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+/* Green box around booking form */
+#booking-form {
+    background-color:#99be64;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+footer {
+    background-color: white;
+    padding: 2em;
+}
